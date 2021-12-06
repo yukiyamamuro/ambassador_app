@@ -110,5 +110,5 @@ func User(c *fiber.Ctx) error {
 
 	database.DB.Where("id = ?", payload.Subject).First(&user)
 
-	return c.JSON(payload.Subject)
+	return c.JSON(user)
 }
