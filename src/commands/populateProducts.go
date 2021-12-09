@@ -8,6 +8,7 @@ import (
 	"github.com/bxcodec/faker/v3"
 )
 
+// 同じ階層に複数のmainは持てなくなった？
 func mainn() {
 	database.Connect()
 
